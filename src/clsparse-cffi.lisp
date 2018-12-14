@@ -4,7 +4,9 @@
 ;;; Do not make changes to this file unless you know what you are doing--modify
 ;;; the SWIG interface file instead.
 
-(in-package #:cl-clsparse)
+(defpackage #:cl-clsparse/src/clsparse-cffi
+  (:use #:cl))
+(in-package #:cl-clsparse/src/clsparse-cffi)
 
 ;;;SWIG wrapper code starts here
 

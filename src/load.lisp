@@ -3,11 +3,10 @@
   Copyright (c) 2018 gos-k (mag4.elan@gmail.com)
 |#
 
-(in-package #:cl-user)
-(defpackage #:cl-clsparse
+(defpackage #:cl-clsparse/src/load
   (:use #:cl
         #:cffi))
-(in-package #:cl-clsparse)
+(in-package #:cl-clsparse/src/load)
 
 (eval-when (:load-toplevel)
   (define-foreign-library libclsparse
