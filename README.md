@@ -12,7 +12,7 @@ cl-clsparse is a Common Lisp bindings for [clSPARSE](https://github.com/clMathLi
 
 ## Install
 
-### Ubuntu 17.10 and Roswell
+### Ubuntu 18.04 and Roswell
 
 Install clSPARSE.
 
@@ -28,15 +28,15 @@ ros install gos-k/cl-clsparse
 ## Test
 
 ```lisp
-(ql:quickload :cl-clsparse-test)
-(prove:run :cl-clsparse-test)
+(ql:quickload '(:rove :cl-clsparse))
+(rove:run :cl-clsparse/tests)
 ```
 
 or
 
 ```
-ros install prove
-run-prove cl-clsparse-test.asd
+ros install rove
+rove cl-clsparse.asd
 ```
 
 ## Requirements
@@ -45,8 +45,8 @@ run-prove cl-clsparse-test.asd
 
 ## Verification environments
 
-* Ubuntu 17.10
-* SBCL 1.3.21 x86-64
+* Ubuntu 18.04
+* SBCL 1.4.14 x86-64
 * clSPARSE 0.10.2.0
 * intel-opencl-r5.0
 
