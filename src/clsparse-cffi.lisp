@@ -4,6 +4,11 @@
 ;;; Do not make changes to this file unless you know what you are doing--modify
 ;;; the SWIG interface file instead.
 
+#|
+  This file is a part of cl-clsparse project.
+  Copyright (c) 2018-2019 gos-k (mag4.elan@gmail.com)
+|#
+
 (defpackage #:cl-clsparse/src/clsparse-cffi
   (:use #:cl))
 (in-package #:cl-clsparse/src/clsparse-cffi)
