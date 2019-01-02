@@ -1,6 +1,6 @@
 #|
   This file is a part of cl-clsparse project.
-  Copyright (c) 2018 gos-k (mag4.elan@gmail.com)
+  Copyright (c) 2018-2019 gos-k (mag4.elan@gmail.com)
 |#
 
 (defpackage #:cl-clsparse/tests/cl-clsparse

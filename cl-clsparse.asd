@@ -3,7 +3,7 @@
   Copyright (c) 2018-2019 gos-k (mag4.elan@gmail.com)
 |#
 
-#-asdf3.1 (error "MY-LIB requires ASDF 3.1 or later.")
+#-asdf3.1 (error "cl-clsparse requires ASDF 3.1 or later.")
 (defsystem :cl-clsparse
   :name "cl-clsparse"
   :version "0.1"
