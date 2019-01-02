@@ -13,6 +13,7 @@
 
   :class :package-inferred-system
   :depends-on ("cffi"
+               "cffi-libffi"
                "cl-clsparse/src/load"
                "cl-clsparse/src/all")
   :in-order-to ((test-op (test-op "cl-clsparse/tests"))))

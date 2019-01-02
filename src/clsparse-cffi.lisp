@@ -262,7 +262,7 @@
 
 (cl:export '#.(swig-lispify "control" 'slotname))
 
-(cffi:defcfun ("clsparseCreateControl" #.(swig-lispify "clsparseCreateControl" 'function)) #.(swig-lispify "clsparseCreateResult" 'classname)
+(cffi:defcfun ("clsparseCreateControl" #.(swig-lispify "clsparseCreateControl" 'function)) (:struct #.(swig-lispify "clsparseCreateResult" 'classname))
   (queue :pointer))
 
 (cl:export '#.(swig-lispify "clsparseCreateControl" 'function))
@@ -289,7 +289,7 @@
 
 (cl:export '#.(swig-lispify "event" 'slotname))
 
-(cffi:defcfun ("clsparseGetEvent" #.(swig-lispify "clsparseGetEvent" 'function)) #.(swig-lispify "clsparseEventResult" 'classname)
+(cffi:defcfun ("clsparseGetEvent" #.(swig-lispify "clsparseGetEvent" 'function)) (:struct #.(swig-lispify "clsparseEventResult" 'classname))
   (control :pointer))
 
 (cl:export '#.(swig-lispify "clsparseGetEvent" 'function))
@@ -322,7 +322,7 @@
 
 (cl:export '#.(swig-lispify "control" 'slotname))
 
-(cffi:defcfun ("clsparseCreateSolverControl" #.(swig-lispify "clsparseCreateSolverControl" 'function)) #.(swig-lispify "clsparseCreateSolverResult" 'classname)
+(cffi:defcfun ("clsparseCreateSolverControl" #.(swig-lispify "clsparseCreateSolverControl" 'function)) (:struct #.(swig-lispify "clsparseCreateSolverResult" 'classname))
   (precond #.(swig-lispify "PRECONDITIONER" 'enumname))
   (maxIters :int)
   (relTol :double)
@@ -436,7 +436,7 @@
 
 (cl:export '#.(swig-lispify "metaSize" 'slotname))
 
-(cffi:defcfun ("clsparseCsrMetaSize" #.(swig-lispify "clsparseCsrMetaSize" 'function)) #.(swig-lispify "clsparseMetaSizeResult" 'classname)
+(cffi:defcfun ("clsparseCsrMetaSize" #.(swig-lispify "clsparseCsrMetaSize" 'function)) (:struct #.(swig-lispify "clsparseMetaSizeResult" 'classname))
   (csrMatx :pointer)
   (control :pointer))
 
