@@ -10,8 +10,9 @@
 
 (defparameter swig (or (ros:getenv "SWIG")
                        "swig3.0"))
+(defparameter flags "-swig-lisp -cffi -I/usr/include -I/usr/include/linux -I/usr/include/x86_64-linux-gnu -D__x86_64__ -importall ")
 
 (task "default" ("clsparse-cffi.lisp"))
 
 (file "clsparse-cffi.lisp" ("clsparse-cffi.i")
-  (sh #?"${swig} -swig-lisp -cffi -I/usr/include -I/usr/include/linux -I/usr/include/x86_64-linux-gnu -D__x86_64__ -importall clsparse-cffi.i"))
+  (sh #?"${swig} ${flags} clsparse-cffi.i"))

@@ -49,6 +49,7 @@ rove cl-clsparse.asd
 * SBCL 1.4.14 x86-64
 * clSPARSE 0.10.2.0
 * intel-opencl-r5.0
+* SWIG 3.0.12
 
 ## Author
 
