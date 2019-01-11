@@ -57,7 +57,7 @@ rove cl-clsparse.asd
 
 ## Copyright
 
-Copyright (c) 2018 gos-k (mag4.elan@gmail.com)
+Copyright (c) 2018-2019 gos-k (mag4.elan@gmail.com)
 
 ## License
 
