@@ -10,6 +10,7 @@
 
 (eval-when (:load-toplevel)
   (define-foreign-library libclsparse
+    (:unix (:or "libclSPARSE.so" "libclSPARSE.so.1"))
     (t (:default "libclSPARSE")))
 
   (unless (foreign-library-loaded-p 'libclsparse)
